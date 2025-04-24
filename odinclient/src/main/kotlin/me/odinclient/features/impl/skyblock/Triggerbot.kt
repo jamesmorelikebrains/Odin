@@ -38,7 +38,7 @@ object Triggerbot : Module(
     private val bloodClickType by BooleanSetting("Blood Click Type", false, desc = "What button to click for blood mobs.").withDependency { blood && bloodDropDown }
 
     private val spiritBearDropDown by DropdownSetting("Spirit Bear Dropdown", false)
-    private val spiritBear by BooleanSetting("Spirit Bear", false, desc = "Automatically clicks the spirit bear.").withDependency { spiritBearDropDown }
+    private val spiritBear by BooleanSetting("SpiritBear", false, desc = "Automatically clicks the spirit bear.").withDependency { spiritBearDropDown }
 
     private val crystalDropDown by DropdownSetting("Crystal Dropdown", false)
     private val crystal by BooleanSetting("Crystal Triggerbot", false, desc = "Automatically takes and places crystals.").withDependency { crystalDropDown }
